@@ -1,0 +1,31 @@
+<h1>{{titulo}}</h1>
+
+<form>
+
+  <div>
+    <label>Nome do Cliente</label>
+    <input type="text" id="cliente.nome" name="cliente.nome" placeholder="Entre aqui com o nome do cliente"
+      [(ngModel)]="cliente.nome"/>
+  </div>
+  <div>
+    <label>CPF</label>
+    <input type="text" id="cpfcliente" name="cpfcliente" placeholder="Entre aqui com o cpf do cliente"
+    [(ngModel)]="cliente.cpf" />
+  </div>
+  <div>
+    <label>CEP</label>
+    <input type="text" id="cepcliente" name="cepcliente" placeholder="Entre aqui com o CEP do cliente"
+    [(ngModel)]="cliente.cep" />
+  </div>
+  <div>
+    <label>Endereço</label>
+    <input type="text" id="enderecocliente" name="enderecocliente" placeholder="Entre aqui com o Endereço do cliente"
+    [(ngModel)]="cliente.endereco" />
+  </div>
+
+
+  <div>
+    <button type="button" (click)="salvarCliente()">Salvar</button>
+  </div>
+
+</form>
